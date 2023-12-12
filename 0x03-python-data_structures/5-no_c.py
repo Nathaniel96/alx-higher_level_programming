@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-def number_keys(a_dictionary):
-    num = 0
-    list_keys = list(a_dictionary.keys())
-
-    for i in list_keys:
-        num += 1
-
-    return (num)
+def no_c(my_string):
+    new_string = my_string.translate({ord(i): None for i in 'cC'})
+    return new_string
